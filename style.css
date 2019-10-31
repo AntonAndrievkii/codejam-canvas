@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+* {
+  box-sizing: border-box;
+}
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 48px;
+
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.24), 0 0 4px rgba(0, 0, 0, 0.12);
+}
+.nav-head {
+  width: 1px;
+  height: 1px;
+
+  opacity: 0;
+}
+
+.nav-button_icon {
+  width: 75px;
+  height: 40px;
+  padding-right: 35px;
+
+  color: rgba(0, 0, 0, 0.54);
+}
+
+.nav-but,
+.nav-dots {
+  height: 100%;
+  padding: 0 0 8px 8px;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  font-family: "Roboto", "Arial", sans-serif;
+  color: rgba(0, 0, 0, 0.87);
+
+  background-color: white;
+  border: 0;
+  cursor: pointer;
+}
+
+.nav-dots {
+  width: 30px;
+  height: 30px;
+  padding: 8px 16px 0 0;
+}
+
+.aside_container {
+  margin-top: 127px;
+}
+
+.panel {
+  width: 228px;
+  height: 246px;
+  margin-bottom: 29px;
+  margin-left: 13%;
+
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.24), 0 0 4px rgba(0, 0, 0, 0.12);
+}
+
+.divider {
+  width: 228px;
+  height: 16px;
+
+  background-image: url("assets/images/divider.png");
+}
+
+.instruments,
+.colors {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+}
+
+.instruments-item,
+.colors-item {
+  width: 196px;
+  height: 48px;
+}
+
+.instruments-item:hover,
+.colors-item:hover {
+  border: 1px solid rgba(0, 0, 0, 0.24);
+}
+
+.instruments-item,
+.colors-item p {
+  display: flex;
+  align-items: center;
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Roboto", "Arial", sans-serif;
+  color: rgba(0, 0, 0, 0.541327);
+}
+
+.instruments-icon {
+  margin-right: 33px;
+}
+
+.colors-icon {
+  margin-right: 18px;
+}
+
+.working_space {
+  display: flex;
+  justify-content: space-between;
+}
+
+.switcher {
+  width: 150px;
+  height: 100%;
+  margin-top: 121px;
+  margin-right: 7%;
+
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.24), 0 0 4px rgba(0, 0, 0, 0.12);
+}
+
+.switcher-item {
+  width: 100%;
+  height: 40px;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  font-family: "Roboto", "Arial", sans-serif;
+  color: rgba(0, 0, 0, 0.541327);
+
+  cursor: pointer;
+}
+
+.switcher-item:hover {
+  color: blue;
+}
+
+.canvas {
+  width: 512px;
+  height: 512px;
+  margin-top: 121px;
+  background-color: rgba(0, 0, 0, 0.241327);
+}

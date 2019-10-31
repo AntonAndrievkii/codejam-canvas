@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>codejam-canvas</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+</head>
+<body>
+<header class="nav">
+  <button class="nav-but" id="nav-but">
+    <span class="nav-button_icon">&#9776;</span> CodeJam - Palette
+  </button>
+  <h1 class="nav-head">CodeJam - Palette</h1>
+  <button class="nav-dots" id="nav-dots">&#8285;</button>
+</header>
+<main class="main-container">
+  <div class="working_space">
+    <div class="aside_container">
+      <div class="panel">
+        <ul class="instruments">
+          <li class="instruments-item">
+            <img class="instruments-icon" src="assets/images/icon_paint_bucket.svg"
+                 height="24" width="24" alt="icon">
+            <p>Paint bucket</p>
+          </li>
+          <li class="instruments-item">
+            <img class="instruments-icon" src="assets/images/icon_choose_color.svg"
+                 height="24" width="24" alt="icon">
+            <p>Choose color</p>
+          </li>
+        </ul>
+        <div class="divider"></div>
+        <ul class="instruments">
+          <li class="instruments-item">
+            <img class="instruments-icon" src="assets/images/icon-move.svg"
+                 height="24" width="24" alt="icon">
+            <p>Move</p>
+          </li>
+          <li class="instruments-item">
+            <img class="instruments-icon" src="assets/images/icon-transform.svg"
+                 height="24" width="24" alt="icon">
+            <p>Transform</p>
+          </li>
+        </ul>
+      </div>
+      <div class="panel">
+        <ul class="colors">
+          <li class="colors-item">
+            <p>
+              <svg class="colors-icon" width="22" height="22">
+                <circle cx="11" cy="11" r="10"
+                        stroke="black" stroke-width="1" fill="#C4C4C4"/>
+              </svg>
+              Current color
+            </p>
+          </li>
+          <li class="colors-item">
+            <p>
+              <svg class="colors-icon" width="22" height="22">
+                <circle cx="11" cy="11" r="10"
+                        stroke="black" stroke-width="1" fill="#41F795"/>
+              </svg>
+              Prev color
+            </p>
+          </li>
+        </ul>
+        <div class="divider"></div>
+        <ul class="colors">
+          <li class="colors-item">
+            <p>
+              <svg class="colors-icon" width="22" height="22">
+                <circle cx="11" cy="11" r="10"
+                        stroke="black" stroke-width="1" fill="#F74141"/>
+              </svg>
+              red
+            </p>
+          </li>
+          <li class="colors-item">
+            <p>
+              <svg class="colors-icon" width="22" height="22">
+                <circle cx="11" cy="11" r="10"
+                        stroke="black" stroke-width="1" fill="#41B6F7"/>
+              </svg>
+              blue
+            </p>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <canvas class="canvas" id="canvas" width="512" height="512"></canvas>
+    <div class="switcher">
+      <ul class="switcher-list">
+        <li class="switcher-item" id="frame4">
+          4x4
+        </li>
+        <li class="switcher-item" id="frame32">
+          32x32
+        </li>
+        <li class="switcher-item" id="image">
+          image 256x256
+        </li>
+      </ul>
+    </div>
+  </div>
+</main>
+<script src="data/32x32.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
